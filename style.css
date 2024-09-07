@@ -20,14 +20,14 @@
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: 0; /* Behind everything */
+    z-index: 0; 
     transform: translateX(-50%) translateY(-50%);
 }
 
 ul li a {
-    position: relative; /* Ensure z-index works */
-    color: white; /* Default color */
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    position: relative;  
+    color: white;  
+    transition: color 0.3s ease;  
 }
 
 ul li a:hover {
@@ -41,7 +41,7 @@ ul li a:hover {
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 1; /* Overlay above the video */
+    z-index: 1;  
     background-image: linear-gradient(rgba(158, 43, 169, 0.5), rgba(25, 85, 196, 0.5));
 }
 
@@ -96,17 +96,15 @@ ul li a:hover {
 }
 .custom-button-outline {
     background-color: transparent;
-    border: 2px solid  #4e3797; /* Use your preferred color */
-    color: #4e3797; /* Use your preferred color */
-     
+    border: 2px solid  #4e3797; 
+    color: #4e3797; 
    padding: 0.5%;
     width: 30vw;
 }
 .custom-button-outline:hover {
     background-color:  #4e3797;
-    border: 2px solid  #4e3797; /* Use your preferred color */
-    color: #ffffff; /* Use your preferred color */
-     
+    border: 2px solid  #4e3797;  
+    color: #ffffff; 
    
     width: 30vw;
 }
@@ -129,4 +127,28 @@ ul li a:hover {
 .bg-secondry {
     background-color: #91d8db;
     color: #fff;
+}
+
+.icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%; 
+    height: 90%;  
+    padding: 2%;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+    color: #4e3797;  
+}
+.icon-wrapper svg {
+    width: 20px;  
+    height: 20px;  
+}
+.icon-wrapper {
+    transition: transform 300ms ease-in-out;
+}
+
+.icon-wrapper:hover {
+    transform: scale(1.25);
 }
