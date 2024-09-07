@@ -1,0 +1,25 @@
+/* @media screen  (max-width: 991px){ 
+    
+} */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
+nav {
+   backdrop-filter: blur(10px);
+}
+
+.text-pro-nav {
+    font-size: 1rem;
+    font-weight: 600;
+ color: black;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+.btn-custom {
+    background-color: #4e3797;
+    color: #57e3d8;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    
+}
+.btn-custom:hover {
+    background-color: #4e3797;
+    color: #57e3d8;
+}
