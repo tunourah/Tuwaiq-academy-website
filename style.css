@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+.video-background-holder {
+    position: relative;
+    
+    height: 100vh;  
+    width: 100%;
+    overflow: hidden;
+}
+ 
+.video-background-holder video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0; /* Behind everything */
+    transform: translateX(-50%) translateY(-50%);
+}
+
+ul li a {
+    position: relative; /* Ensure z-index works */
+    color: white; /* Default color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+ul li a:hover {
+    color: #6ddccf;
+    z-index: 3;
+}
+
+.video-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1; /* Overlay above the video */
+    background-image: linear-gradient(rgba(158, 43, 169, 0.5), rgba(25, 85, 196, 0.5));
+}
+
+.navbar {
+    z-index: 3; 
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+.video-background-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+.text-custom {
+    color: #4e3797;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+.text-custom-secondray{
+    color: #91d8db;
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+.text-number-custom-secondray{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4e3797;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+.font-custom {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    
+}
+.bg-secondary-custom {
+    background-color: #91d8db;
+}
+ 
+.shadow-custom {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 8%;
+}
+.custom-button-outline {
+    background-color: transparent;
+    border: 2px solid  #4e3797; /* Use your preferred color */
+    color: #4e3797; /* Use your preferred color */
+     
+   padding: 0.5%;
+    width: 30vw;
+}
+.custom-button-outline:hover {
+    background-color:  #4e3797;
+    border: 2px solid  #4e3797; /* Use your preferred color */
+    color: #ffffff; /* Use your preferred color */
+     
+   
+    width: 30vw;
+}
+.bg-purple {
+    background-color:  #4e3797;
+}
+.btn-custom {
+    background-color: #4e3797;
+    color: #ffffff;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    
+}
+.btn-custom:hover {
+    background-color: #fff;
+    color: #4e3797;
+    border: 1px solid #4e3797;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    
+}
+.bg-secondry {
+    background-color: #91d8db;
+    color: #fff;
+}
