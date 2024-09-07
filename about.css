@@ -11,7 +11,9 @@
 nav {
    backdrop-filter: blur(10px);
 }
-
+.my-custom {
+    margin-top: 10%;
+}
 .text-pro-nav {
     font-size: 1rem;
     font-weight: 600;
