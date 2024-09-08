@@ -147,3 +147,26 @@ nav {
     color: #ffffff !important;
     
 }
+
+ 
+
+ /* The entire scrollbar */
+::-webkit-scrollbar {
+    width: 15px;  
+    height: 12px;  }
+
+/* The scrollbar track (background) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;  
+}
+
+/* The scrollbar handle (draggable part) */
+::-webkit-scrollbar-thumb {
+    background:  #e7b6f2;  
+    border-radius: 10px;  
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+    background:  #d07be3; 
+}
