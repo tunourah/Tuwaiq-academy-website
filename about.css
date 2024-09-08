@@ -132,3 +132,18 @@ nav {
     .font-weight {
         font-weight: 1000;
     }
+/*  footer */
+
+.bg-light-purple {
+    background-color: #e7b6f2;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.a-style-purple {
+    color: #4e3797;
+}
+ 
+.a-style-purple:hover{
+    color: #ffffff !important;
+    
+}

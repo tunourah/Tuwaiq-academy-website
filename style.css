@@ -47,6 +47,8 @@ ul li a:hover {
 
 .navbar {
     z-index: 3; 
+    background-color: white;
+    color: #222;
 }
 
 .bg-transparent {
@@ -91,6 +93,19 @@ ul li a:hover {
             background-color: white;
             color: skyblue;
         }
+        .card-button {
+            width: 8vw;
+            height: 5vh;
+          border-radius: 30px;
+            border: 2px solid skyblue;
+            background-color: white;
+            color: skyblue;
+       
+    }
+    .card-button:hover {
+        background-color: skyblue;
+        color: white;
+    }
         .card-button-frist {
             width: 8vw;
             height: 5vh;
@@ -98,6 +113,10 @@ ul li a:hover {
             border: 2px solid #BEE5C2;
             background-color: white;
             color:  #BEE5C2;
+        }
+        .card-button-frist:hover {
+            background-color: #BEE5C2;
+            color: white;
         }
 
 .text-custom {
@@ -173,17 +192,17 @@ ul li a:hover {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 90%; 
-    height: 90%;  
-    padding: 2%;
+    width: 100%; 
+    height: 100%;  
+    padding: 5%;
     border-radius: 50%;
     background-color: white;
     overflow: hidden;
     color: #4e3797;  
 }
 .icon-wrapper svg {
-    width: 20px;  
-    height: 20px;  
+    width: 25px;  
+    height: 15px;  
 }
 .icon-wrapper {
     transition: transform 300ms ease-in-out;
@@ -208,7 +227,7 @@ ul li a:hover {
     justify-content: center;
 }
 .btn-custom-header:hover{
-    background-color: #5bbec18e;
+    background-color: #5bbec18e ; 
     
 }
 .header-text{
@@ -218,5 +237,15 @@ ul li a:hover {
     font-family: "IBM Plex Sans Arabic", sans-serif;
  
    
+    
+}
+/* footer */
+
+.a-style{
+    color: #fff;
+
+}
+.a-style:hover{
+    color: #6ddccf !important;
     
 }
