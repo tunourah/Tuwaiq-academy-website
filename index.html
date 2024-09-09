@@ -18,96 +18,71 @@
   <body>
     <!-- Background video holder including navbar -->
     <div class="video-background-holder">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent py-3">
-        <div class="container">
-          <img
-            class="navbar-brand"
-            src="https://web.archive.org/web/20240814102443im_/https://cdn.tuwaiq.edu.sa/landing/images/logo/logo-h-white.png"
-            width="15%"
-            height="15%"
-            alt="logo tuwaiq academy"
-          />
-          <!-- burger menu  -->
-          <button
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            class="navbar-toggler"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- end  -->
-          <div
-            id="navbarSupportedContent"
-            class="collapse navbar-collapse justify-content-between"
-          >
-            <ul class="navbar-nav ml-auto d-flex">
-              <li class="nav-item">
-                <a href="#" class="nav-link text-white fs-5  a-style"> الرئيسية </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link text-white fs-5  a-style">
-                  المسارات والبرامج
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./about.html" class="nav-link text-white fs-5  a-style">
-                  حول الاكاديمية
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link text-white fs-5  a-style">
-                  الاكاديميات التابعة
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link text-white fs-5  a-style">
-                  مركز الاختبارات
-                </a>
-              </li>
-            </ul>
+        <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent py-3">
+          <div class="container">
+            <img
+              class="navbar-brand"
+              src="https://web.archive.org/web/20240814102443im_/https://cdn.tuwaiq.edu.sa/landing/images/logo/logo-h-white.png"
+              width="15%"
+              height="15%"
+              alt="logo tuwaiq academy"
+              id="navbar-logo"
+            />
+            <!-- burger menu  -->
             <button
               type="button"
-              class="btn text-white fs-5"
-              data-bs-toggle="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              class="navbar-toggler"
             >
-              تسجيل الدخول
+              <span class="navbar-toggler-icon"></span>
             </button>
-          </div>
-        </div>
-      </nav>
-
-      <!-- Video Background -->
-      <div class="video-background-overlay"></div>
-      <!-- Gradient overlay -->
-      <video
-        playsinline="playsinline"
-        autoplay="autoplay"
-        muted="muted"
-        loop="loop"
-      >
-        <source
-          src="https://tuwaiq.edu.sa/videos/introS2.mp4"
-          type="video/mp4"
-        />
-      </video>
-
-      <!-- Content over video -->
-      <div class="video-background-content container h-100 d-flex justify-content-center align-items-center">
-        <div class="text-center  header-text">
-          <h1 class=" header-text  text-white">تعلم تقنيات <br> المستقبــل</h1>
-          <div class="h-50 ">
-            <button type="button" class=" btn-custom-header  fs-1 fw-bold">
-                ابدأ الان
+            <!-- end  -->
+            <div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-between">
+              <ul class="navbar-nav ml-auto d-flex">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white fs-5 a-style"> الرئيسية </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white fs-5 a-style"> المسارات والبرامج </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./about.html" class="nav-link text-white fs-5 a-style"> حول الاكاديمية </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white fs-5 a-style"> الاكاديميات التابعة </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white fs-5 a-style"> مركز الاختبارات </a>
+                </li>
+              </ul>
+              <button type="button" class="btn text-white fs-5" data-bs-toggle="button">
+                تسجيل الدخول
               </button>
+            </div>
           </div>
-       
+        </nav>
+      
+        <!-- Video Background -->
+        <div class="video-background-overlay"></div>
+        <!-- Gradient overlay -->
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="https://tuwaiq.edu.sa/videos/introS2.mp4" type="video/mp4" />
+        </video>
+      
+        <!-- Content over video -->
+        <div class="video-background-content container h-100 d-flex justify-content-center align-items-center">
+          <div class="text-center header-text">
+            <h1 class="header-text text-white">تعلم تقنيات <br> المستقبــل</h1>
+            <div class="h-50">
+              <button type="button" class="btn-custom-header fs-1 fw-bold">ابدأ الان</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
  
 
  <!-- second section   -->
@@ -462,6 +437,34 @@
 
 
   </div> 
+
+
+    <script>
+
+window.addEventListener("scroll", function() {
+    var navbar = document.getElementById("navbar");
+    var navbarLogo = document.getElementById("navbar-logo");
+    var navLinks = document.querySelectorAll(".nav-link");
+    var loginButton = document.querySelector(".btn");
+           // Add or remove classes based on scroll position
+    if (window.scrollY > 50) {
+      navbar.classList.add("navbar-scrolled");
+      navbarLogo.src = "https://cdn.tuwaiq.edu.sa/landing/images/logo/logo-h-black.png"; // Update logo for white background
+      navLinks.forEach(link => link.classList.remove("text-white"));
+      navLinks.forEach(link => link.classList.add("text-black"));
+      loginButton.classList.remove("text-white");
+      loginButton.classList.add("text-black");
+    } else {
+      navbar.classList.remove("navbar-scrolled");
+      navbarLogo.src = "https://web.archive.org/web/20240814102443im_/https://cdn.tuwaiq.edu.sa/landing/images/logo/logo-h-white.png"; // Revert logo
+      navLinks.forEach(link => link.classList.add("text-white"));
+      navLinks.forEach(link => link.classList.remove("text-black"));
+      loginButton.classList.add("text-white");
+      loginButton.classList.remove("text-black");
+    }
+});
+    </script>
+
   </body>
 </html>
 <div>
@@ -473,6 +476,4 @@
       
   
          
-         
-      </section>
-</div>
+ 
