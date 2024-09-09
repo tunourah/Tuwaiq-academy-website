@@ -170,3 +170,7 @@ nav {
 ::-webkit-scrollbar-thumb:hover {
     background:  #d07be3; 
 }
+ 
+@media only screen and (max-width: 600px) {
+    
+  }
